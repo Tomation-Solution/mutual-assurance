@@ -11,7 +11,7 @@ export const DropdownContainer = styled.ul`
     z-index: 90;
     top: 30px;
     left: 10px;
-  box-shadow: 0px 4px 4px rgba(20, 166, 229, 0.11);
+  box-shadow: ${props=>props.theme.boxShadow};
     display: none;
 
       li{

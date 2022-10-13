@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { ButtonProp } from './Button';
 import { createExternalStyle } from '../../utils/extraFunction';
 import { motion } from 'framer-motion';
+// 0px 4px 4px 
 export const ButtonStyle = styled(motion.button)<ButtonProp>`
   
-  box-shadow: 0px 4px 4px rgba(20, 167, 229, 0.3);
+  box-shadow: ${props=>props.theme.boxShadow};
 border-radius: 10px;
 
  border: transparent;

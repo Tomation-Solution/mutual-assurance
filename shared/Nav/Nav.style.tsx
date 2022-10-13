@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const MainNav =styled.nav`
-    box-shadow: 0px 4px 4px rgba(20, 166, 229, 0.048);
+    box-shadow:${props=>props.theme.boxShadow};
     position: relative;
     z-index: 10;
 `
@@ -46,7 +46,7 @@ ${
   (prop)=>{
     if(prop.showMobileLink){
       return `
-    box-shadow: 0px 4px 4px rgba(20, 166, 229, 0.096);
+    box-shadow: ${prop.theme.boxShadow};
       transform: translateX(0); `
     }else{
       return 'transform: translateX(100%);'
@@ -75,7 +75,13 @@ svg{
 
 `
 export const NavLogoContainer=styled.div`
+width: 150px;
 cursor: pointer;
+
+img{
+    width:100%;
+    height: 100%;
+}
 `
 
 
