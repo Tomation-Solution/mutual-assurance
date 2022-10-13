@@ -17,7 +17,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     <GlobalStyles/>
 
-    <NextNProgress/>
+    <NextNProgress
+      color={'rgba(220, 33, 76,.9)'}
+    />
     <Component {...pageProps} />
   </ThemeProvider>
 }

@@ -9,9 +9,8 @@ const GeneralLayout = ({children}:Prop):React.ReactElement=>{
 
 
   return (
-    <div>
+    <div style={{'maxWidth':'1500px'}}>
       <Nav />
-      <br />
       {children}
     </div>
   )
