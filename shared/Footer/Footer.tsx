@@ -17,7 +17,7 @@ const Footer= ():React.ReactElement=>{
               <div className="col-xl-4 col-lg-4 mb-50">
                 <div className="footer-widget">
                   <div className="footer-logo">
-                    <a href="index.html" style={{color:'white'}}>Mutual Alliance</a>
+                    <a href="index.html" style={{color:'white'}}> Mutual Benefits Insurance Brokers Limited</a>
                   </div>
                   <div className="footer-text">
                     <p>
@@ -73,7 +73,7 @@ const Footer= ():React.ReactElement=>{
             <div className="row">
               <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                 <div className="copyright-text">
-                  <p>Copyright &copy; 2021, All Right Reserved <a href="#">@MutualAlliance</a></p>
+                  <p>Copyright &copy; 2021, All Right Reserved <a href="#">@tomation</a></p>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">

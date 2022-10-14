@@ -20,7 +20,7 @@ const Home: NextPage = () => {
     <GeneralLayout>
       <HeroSection 
         head={`
-        Welcome to Mutual Assurance `}
+        Welcome to Mutual Benefits Insurance Brokers Limited`}
         content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus etiam sagittis, aliquam feugiat cras orci, bibendum odio ultricies. At ullamcorper tincidunt tempor scelerisque ac purus tincidunt. Urna odio sed ullamcorper dignissim tincidunt mattis ut suspendisse. Nisl erat donec egestas dui nam odio habitasse.'}
       />
       <br />
