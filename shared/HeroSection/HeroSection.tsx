@@ -4,8 +4,12 @@ import human_image from '../../asset/heroimage1.png';
 import greenBlob from '../../asset/ep.png';
 
 
-
-const HeroSection = ():React.ReactElement=>{
+type Prop ={
+  head:string;
+  content:string;
+  image?:string;
+}
+const HeroSection = ({head,content,image=human_image.src}:Prop):React.ReactElement=>{
 
 
   return (
@@ -13,13 +17,13 @@ const HeroSection = ():React.ReactElement=>{
 
       <HeroSectionHalfPink>
         <HeroSecionContent>
-          <h1>Welcome to Mutual Assurance </h1>
+          <h1>{head} </h1>
           <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus etiam sagittis, aliquam feugiat cras orci, bibendum odio ultricies. At ullamcorper tincidunt tempor scelerisque ac purus tincidunt. Urna odio sed ullamcorper dignissim tincidunt mattis ut suspendisse. Nisl erat donec egestas dui nam odio habitasse.
+            {content}
           </p>
           <Button>Learn More..</Button>
         </HeroSecionContent>
-        <img src={human_image.src} alt=""  className='human_image'/>
+        <img src={image} alt=""  className='human_image'/>
         <img src={greenBlob.src} alt="" className='gren_blob'/>
       </HeroSectionHalfPink>
             

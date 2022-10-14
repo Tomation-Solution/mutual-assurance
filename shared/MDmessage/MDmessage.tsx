@@ -1,5 +1,5 @@
 import { MDmessageContainer } from './MDmessage.style'
-import mdImage from '../../asset/Rectangle 400.png'
+import mdImage from '../../asset/owner.png'
 
 
 

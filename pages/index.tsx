@@ -16,10 +16,13 @@ import c4 from '../asset/c4.png'
 
 const Home: NextPage = () => {
   const isLaptop = useMediaQuery({query:'(min-width:800px)'})
-  console.log({isLaptop})
   return (
     <GeneralLayout>
-      <HeroSection/>
+      <HeroSection 
+        head={`
+        Welcome to Mutual Assurance `}
+        content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus etiam sagittis, aliquam feugiat cras orci, bibendum odio ultricies. At ullamcorper tincidunt tempor scelerisque ac purus tincidunt. Urna odio sed ullamcorper dignissim tincidunt mattis ut suspendisse. Nisl erat donec egestas dui nam odio habitasse.'}
+      />
       <br />
 
       <div style={{'padding':'1rem'}}>
@@ -41,7 +44,8 @@ const Home: NextPage = () => {
       <br />
       <br />
       <h2 style={{'textAlign':'center'}}>What Our Customers Love About Us</h2>
-      <div style={{'display':isLaptop?'flex':'block','justifyContent':'space-between','maxWidth':'1200px','margin':'0 auto','flexWrap':isLaptop?'nowrap':'wrap'}}>
+      <div style={{'display':'flex','justifyContent':'space-between','maxWidth':'1200px','margin':'0 auto','flexWrap':'wrap',
+      }}>
 
         {
           [...new Array(3)].map((d,index)=>(
@@ -53,7 +57,7 @@ const Home: NextPage = () => {
       <br />
       <h2 style={{'textAlign':'center'}}>Major Areas of Activities</h2>
       <br />
-      <div style={{'backgroundColor':'#ef96aa','padding':'1.2rem .7rem','display':isLaptop?'flex':'block','flexWrap':'wrap','justifyContent':'center','alignItems':'center'}}>
+      <div style={{'backgroundColor':'#ef96aa','padding':'1.2rem .7rem','display':'flex','flexWrap':'wrap','justifyContent':'center','alignItems':'center'}}>
         {
           [...new Array(8)].map((d,index)=>(
             <MajorActivites key={index}/>

@@ -9,11 +9,16 @@ import contactImg from '../asset/contactImg.png'
 import InputWithLabel from '../shared/InputWithLabel/InputWithLabel';
 import Button from '../shared/Button/Button';
 import HeroSection from '../shared/HeroSection/HeroSection';
+import hello from '../asset/hello.png'
 
 const contact:NextPage=()=>{
   return (
     <GeneralLayout>
-      <HeroSection/>
+      <HeroSection
+        image={hello.src}
+        head='Contact Us'
+        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus etiam sagittis, aliquam feugiat cras orci, bibendum odio ultricies. At ullamcorper tincidunt tempor scelerisque ac purus tincidunt. Urna odio sed ullamcorper dignissim tincidunt mattis ut suspendisse. '
+      />
       <br />
       <ContactContainer>
         <ContactContentContainer>

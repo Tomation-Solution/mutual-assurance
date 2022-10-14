@@ -8,12 +8,16 @@ import owner from '../asset/owner.png'
 import owner1 from '../asset/owner1.png'
 import owner2 from '../asset/owner2.png'
 import owner3 from '../asset/owner3.png'
-
+import aboutImg from '../asset/aboutImg.png'
 
 const About:NextPage =()=>{
   return (
     <GeneralLayout>
-      <HeroSection/>
+      <HeroSection
+        image={aboutImg.src}
+        head='About Us'
+        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus etiam sagittis, aliquam feugiat cras orci, bibendum odio ultricies. At ullamcorper tincidunt tempor scelerisque ac purus tincidunt. Urna odio sed ullamcorper dignissim tincidunt mattis ut suspendisse. '      
+      />
       <br />
 
       <AboutContainer>
