@@ -50,60 +50,60 @@ const Nav = ():React.ReactElement=>{
         <NavSecondPart showMobileLink={showMobileNav}>
           <IoMdCloseCircle  onClick={handleShowMobileNav}/>
           <NavLinksContainer>
-            <li><a  
-              href="#"
-              id='product'
+            <li
+              className={router.pathname=='/'? 'active' : ''} 
+            ><Link  
+                href="/"
               // aria-expanded={dropdown ? 'true' : 'false'}
               // onClick={(e)=>handleDropDown(e,'product')} 
-              // className={dropdown=='product' ? 'active' : ''} 
-            >Home</a>
+              >Home</Link>
             </li>
-            <li><a href="#"
-              id='solutions'
-              // aria-expanded={dropdown ? 'true' : 'false'}
-              // onClick={(e)=>handleDropDown(e,'solutions')} 
-              className={dropdown=='solutions' ? 'active' : ''} 
-            >About Us </a>
+            <li
+              className={router.pathname=='/about' ? 'active' : ''} 
+            ><Link 
+                href="/about"
+              >About Us </Link>
             </li>
 
             <li>
               <a href="#"
-                id='about_us'
+                id='product'
                 aria-expanded={dropdown ? 'true' : 'false'}
-                onClick={e=>handleDropDown(e,'about_us')}
-                className={dropdown=='about_us' ? 'active' : ''} 
+                onClick={e=>handleDropDown(e,'product')}
+                className={dropdown=='product' ? 'active' : ''} 
               >Products
-                <img src={dropdown=='about_us'?up.src:down.src} alt="" />
+                <img src={dropdown=='product'?up.src:down.src} alt="" />
               </a>
-              <NavDropDown submenus={[]} dropdown={dropdown=='about_us'} />
+              <NavDropDown submenus={[]} dropdown={dropdown=='product'} />
             </li>
 
 
-            <li><a 
-              href="/parthers"
-              className={router.pathname == '/parthers' ? 'active' : ''} 
-            >Resource</a></li>
+            <li
+              className={router.pathname == '/resource' ? 'active' : ''} 
+            ><Link
+                href="/resource"
+              >Resource</Link></li>
            
-            <li><a 
-              className={router.pathname == '/blog' ? 'active' : ''} 
-              onClick={e=>{
-                e.preventDefault()
-                handleRoute('/blog')
-              }}
-            >Careers</a></li>
+            <li
+            
+              className={router.pathname == '/career' ? 'active' : ''} 
+            ><Link
+                href={'/career'}
+             
+              >Careers</Link></li>
 
-            <li><a 
-              className={router.pathname == '/contact_page' ? 'active' : ''} 
-              onClick={e=>{
-                e.preventDefault()
-                handleRoute('/contact_page')
-              }}
-            >FAQs</a></li>
+            <li
+              className={router.pathname == '/faq' ? 'active' : ''} 
+            
+            ><Link
+                href={'/faq'}
+            
+              >FAQs</Link></li>
           </NavLinksContainer>
 
 
           <NavBtnContainer>
-            <Button>Contact us</Button>
+            <Button onClick={(e)=>handleRoute('/contact')}>Contact us</Button>
           </NavBtnContainer>
         </NavSecondPart>
 

@@ -14,7 +14,7 @@ const faq:NextPage=()=>{
         head={'Frequently Asked Questions'}
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus etiam sagittis, aliquam feugiat cras orci, bibendum odio ultricies. At ullamcorper tincidunt tempor scelerisque ac purus tincidunt. Urna odio sed ullamcorper dignissim tincidunt mattis ut suspendisse. Nisl erat donec egestas dui nam odio habitasse.'
       />
-      <div style={{'padding':'1rem 1.3rem'}}>
+      <div style={{'padding':'1rem 1.3rem','maxWidth':'900px','margin':'0 auto'}}>
         <h2 style={{'color':'#DC214C'}}>
         At posuere tristique in?
         </h2>

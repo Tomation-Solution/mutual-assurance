@@ -92,7 +92,9 @@ export const NavLinksContainer=styled.ul`
     li{
         padding: .8rem 0;
         position: relative;
-
+        &.active a{
+            color: ${({theme})=>theme.main_color} !important;
+        }
     }
     img{
         pointer-events: none;
